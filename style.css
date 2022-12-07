@@ -76,13 +76,13 @@
 
 @media only screen and (max-width: 1000px) {
     .background{
-        height: 450px;
+        height: 580px;
     }
     .top{
         background: white;
     }
   }
-  
+
 @media only screen and (max-width: 799px) {
     .background{
         height: 650px;
