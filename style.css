@@ -1,0 +1,101 @@
+.logo{
+    width: 68%;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    width: 10%;
+}
+
+.slider-control{
+    background: rgba(131, 130, 130, 0.1);
+    padding-bottom: 2.5px;
+    padding-left: 6px;
+    padding-right: 9px;
+    padding-top: 7px;
+    border: 1px;
+    border-radius: 50%;
+}
+.right{
+    padding-left: 9px;
+    padding-right: 6px;
+}
+
+.carousel-indicators button.active{
+    background-image: linear-gradient(to left, orange 0%, yellow 100%, orange 0%);
+    height: 9px;
+    width: 25px;
+    transition: width 0.5s;
+}
+
+.carousel-indicators .indicator-btn{
+    height: 9px;
+    width: 12px;
+    background-image: linear-gradient(to right, rgb(209, 209, 209) 0%, rgb(44, 44, 44) 100%, rgb(209, 209, 209) 0%);
+    border: #ffffff 1px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.container{
+    margin-bottom: 50px;
+}
+
+.background{
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 8px;
+    height: 550px;
+}
+
+.top{
+    background-image: url("hot-gadgets/bg-2.png");
+    background-repeat: no-repeat;
+    background-position-y: 480px;
+}
+
+
+.carousel-item{
+    padding: 20px 20px;
+}
+
+.price{
+    color: #020202;
+    margin-bottom: 20px;
+}
+
+.buy-now{
+    background-image: linear-gradient(to bottom, #505050 0%, #000000 100%);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 9px 25px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .background{
+        height: 450px;
+    }
+    .top{
+        background: white;
+    }
+  }
+  
+@media only screen and (max-width: 799px) {
+    .background{
+        height: 650px;
+    }
+    .top{
+        background: white;
+    }
+    .banner-mid{
+      width: 80px;
+      height: 10px;
+    }
+    .banner-mid img{
+        transform: rotate(90deg);
+    }
+
+  }
