@@ -3,7 +3,7 @@
 }
 
 .carousel-control-prev, .carousel-control-next{
-    width: 10%;
+    width: 50px;
 }
 
 .slider-control{
@@ -23,13 +23,13 @@
 .carousel-indicators button.active{
     background-image: linear-gradient(to left, orange 0%, yellow 100%, orange 0%);
     height: 9px;
-    width: 25px;
+    width: 28px;
     transition: width 0.5s;
 }
 
 .carousel-indicators .indicator-btn{
     height: 9px;
-    width: 12px;
+    width: 14px;
     background-image: linear-gradient(to right, rgb(209, 209, 209) 0%, rgb(44, 44, 44) 100%, rgb(209, 209, 209) 0%);
     border: #ffffff 1px;
     border-radius: 20px;
@@ -56,6 +56,10 @@
 .carousel-item{
     padding: 20px 20px;
 }
+.carousel-text{
+    padding-left: 0px;
+    margin-left: 0px;
+}
 
 .price{
     color: #020202;
@@ -73,10 +77,17 @@
     cursor: pointer;
 }
 
+.buy-now span{
+    display: none;
+}
+.buy-now:after{
+    content: "BUY NOW →";
+}
+
 
 @media only screen and (max-width: 1000px) {
     .background{
-        height: 580px;
+        height: 480px;
     }
     .top{
         background: white;
@@ -97,5 +108,14 @@
     .banner-mid img{
         transform: rotate(90deg);
     }
-
+    .price{
+        display: inline;
+    }
+    .buy-now{
+        display: flex;
+        float: right;
+    }
+    .buy-now:after{
+            content: "BUY NOW ↓";
+        }
   }
