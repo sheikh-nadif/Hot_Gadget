@@ -66,22 +66,33 @@
     margin-bottom: 20px;
 }
 
+
 .buy-now{
-    background-image: linear-gradient(to bottom, #505050 0%, #000000 100%);
-    color: white;
+    background-color: #222222;
+    color: rgb(0, 255, 191);
     text-transform: uppercase;
-    font-weight: 600;
-    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    text-shadow: 0 0 0.4em rgb(0, 0, 0), 0 0 0.8em currentColor;
+    border: currentColor 3px solid;
     border-radius: 8px;
     padding: 9px 25px;
     cursor: pointer;
+    box-shadow: /*inset 0 0 5px 0.025em currentColor,*/ 0 0 5px 0.025em currentColor;
+    transition:  text-shadow 0.4s linear, background-color 0.4s linear;
 }
 
-.buy-now span{
+.buy-now:hover{
+    background-color: rgb(221, 255, 239);
+    text-shadow: none;
+}
+
+
+.buy-now-top span{
     display: none;
 }
-.buy-now:after{
-    content: "BUY NOW →";
+.buy-now-top:after{
+    content: "BUY NOW ➥";
 }
 
 
@@ -111,11 +122,54 @@
     .price{
         display: inline;
     }
-    .buy-now{
+    .buy-now-top{
         display: flex;
         float: right;
     }
-    .buy-now:after{
+    .buy-now-top:after{
             content: "BUY NOW ↓";
         }
+  }
+
+
+  .card-title-top{
+    margin-bottom: 15px;
+  }
+  .card-title-top a{
+    text-decoration: none;
+    font-weight: 600;
+    color: orange;
+  }
+
+
+
+ .card{
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 5px 10px lightgrey;
+ }
+ .card .card-body{
+    padding-bottom: 10px;
+ }
+ .card img{
+    padding: 20px 0;
+    width: 250px;
+  }
+  .card h5{
+    font-weight: 600;
+  }
+
+  .card .card-footer{
+    background-color: #ffffff;
+    border: none;
+  }
+  .card .card-footer h3{
+    font-weight: 600;
+    color: rgb(28, 41, 44);
+    margin-bottom: 15px;
+  }
+
+  .card .card-footer .last-update{
+    margin-top: 10px;
   }
