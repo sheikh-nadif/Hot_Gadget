@@ -204,6 +204,7 @@
     width: 100%;
     background: #00ffbf;
     min-height: 80px; 
+    padding-top: 5px;
     padding-bottom: 20px;
     display: flexbox;
     justify-content: center;
@@ -226,17 +227,30 @@ footer .social-icon li {
 
 footer .social-icon li a {
     font-size: 2em;
-    color: white;
     margin: 0 10px;
     display: inline-block;
-    transition: 0.5s;
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
+    transform: none;
+    transition-duration: 800ms, 400ms;
+    transition-property: color, transform;
+    transition-timing-function: ease-in-out, ease-in-out;
 }
 
-footer .social-icon li:hover {
-    transform: translateY(-10px);
+footer .social-icon li a:hover {
+   /* animation: icon-hover 1s ease-in-out; */
+ 
+   transform: translateY(-10px);
+   color: rgb(0, 0, 0);
 }
+/*@keyframes icon-hover{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+} */
 
 footer p{
     padding: 0;
